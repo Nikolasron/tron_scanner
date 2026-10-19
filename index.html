@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRON Active Allowances</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; }
+        .risk-high { color: #f85149; font-weight: bold; }
+        .risk-med { color: #d29922; }
+        .risk-low { color: #3fb950; }
+        tr:hover { background-color: #161b22; }
+    </style>
+</head>
+<body class="p-4 md:p-8 font-sans">
+    <div class="max-w-6xl mx-auto">
+        <header class="mb-8 border-b border-gray-700 pb-4">
+            <h1 class="text-3xl font-bold text-white mb-2">TRON Active Allowances</h1>
+            <p class="text-gray-400">Showing live approvals (allowance > 0) discovered by the scanner.</p>
+            <p id="last-updated" class="text-sm text-blue-400 mt-2">Loading data...</p>
+        </header>
+
+        <div class="mb-4 flex gap-4">
+            <input type="text" id="search" placeholder="Search Owner, Spender, or Token..." 
+                   class="w-full p-3 rounded bg-gray-800 border border-gray-600 text-white focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div class="overflow-x-auto rounded-lg border border-gray-700">
+            <table class="w-full text-left border-collapse text-sm">
+                <thead class="bg-gray-800 text-gray-300">
+                    <tr>
+                        <th class="p-3 border-b border-gray-700">Owner</th>
+                        <th class="p-3 border-b border-gray-700">Spender</th>
+                        <th class="p-3 border-b border-gray-700">Type</th>
+                        <th class="p-3 border-b border-gray-700">Token</th>
+                        <th class="p-3 border-b border-gray-700">Allowance</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="empty-state" class="hidden text-center p-8 text-gray-400">
+            No active approvals found in the latest scan.
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
