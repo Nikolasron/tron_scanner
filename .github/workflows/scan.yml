@@ -1,0 +1,72 @@
+name: TRON Allowance Scan
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'       # every 4 hours, UTC
+  workflow_dispatch:
+    inputs:
+      discover:
+        description: 'Auto-discover addresses from Approval events'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tron-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Discover recent approvers
+        if: ${{ github.event.inputs.discover != 'false' }}
+        env:
+          TRONGRID_API_KEY: ${{ secrets.TRONGRID_API_KEY }}
+          LOOKBACK_HOURS:   '4'
+          MAX_DISCOVERED:   '500'
+        run: python discover_owners.py
+
+      - name: Audit live allowances
+        env:
+          TRONSCAN_API_KEY: ${{ secrets.TRONSCAN_API_KEY }}
+          TRONGRID_API_KEY: ${{ secrets.TRONGRID_API_KEY }}
+          MAX_ADDRESSES:    '500'
+        run: python tron_scanner.py
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: active-approvals-${{ github.run_number }}
+          if-no-files-found: warn
+          retention-days: 30
+          path: |
+            active_approvals.json
+            active_approvals.csv
+            discovered_addresses.txt
+
+      - name: Commit results back to repo
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add active_approvals.json active_approvals.csv discovered_addresses.txt 2>/dev/null || true
+          if ! git diff --staged --quiet; then
+            git commit -m "scan $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            git push
+          else
+            echo "Nothing to commit."
+          fi
