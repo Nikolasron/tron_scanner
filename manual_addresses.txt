@@ -1,0 +1,6 @@
+# Optional: add TRON Base58 addresses you always want to audit
+# (one per line). Lines starting with # are ignored.
+# Leave this file as-is if you rely on auto-discovery only.
+#
+# Example:
+# TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t
