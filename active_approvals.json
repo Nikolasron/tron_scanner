@@ -1,19 +1,89 @@
 {
-  "generated_at_utc": "2026-10-26T23:25:42.698154+00:00",
-  "total_active": 9,
+  "generated_at_utc": "2026-10-27T02:39:25.838335+00:00",
+  "total_active": 12,
   "approvals": [
     {
-      "owner": "T9yRYwvPCaBoSGxuAYbGniZNGZ9unpw3s7",
-      "spender": "TKFRELGGoRgiayhwJTNNLqCNjFoLBh3Mnf",
+      "owner": "TA36qWhpqewgAPL48XVvDPxZnWwgRb8zgH",
+      "spender": "TKqQ7zuL7yKp1NWuhGpoXTDiE3j2qiAbRE",
       "spender_type": "contract",
-      "token_contract": "TXDk8mbtRbXeYuMNS83CfKPaYYT8XWv9Hz",
-      "token_symbol": "USDD",
+      "token_contract": "TDk91SWz2GvwfZwMTGX21d4ngUUH8YZZAv",
+      "token_symbol": "OSK",
       "token_decimals": 18,
-      "allowance_raw": "300000000000000000000000",
-      "unlimited": false
+      "allowance_raw": "115792089237316195423570985008687907853269984665640564039442527332933368323584",
+      "unlimited": true
     },
     {
-      "owner": "T9yXCVdXUyWE8d5ik1bxsodBcyEuTE8SL3",
+      "owner": "TA36qWhpqewgAPL48XVvDPxZnWwgRb8zgH",
+      "spender": "TTJxU3P8rHycAyFY4kVtGNfmnMH4ezcuM9",
+      "spender_type": "contract",
+      "token_contract": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "token_symbol": "WTRX",
+      "token_decimals": 6,
+      "allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "unlimited": true
+    },
+    {
+      "owner": "TA36qWhpqewgAPL48XVvDPxZnWwgRb8zgH",
+      "spender": "TKwNfJYb2iyouByKpNdxQ6tryXK8KhTPT9",
+      "spender_type": "contract",
+      "token_contract": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "token_symbol": "WTRX",
+      "token_decimals": 6,
+      "allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "unlimited": true
+    },
+    {
+      "owner": "TA36qWhpqewgAPL48XVvDPxZnWwgRb8zgH",
+      "spender": "TKqQ7zuL7yKp1NWuhGpoXTDiE3j2qiAbRE",
+      "spender_type": "contract",
+      "token_contract": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "token_symbol": "WTRX",
+      "token_decimals": 6,
+      "allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "unlimited": true
+    },
+    {
+      "owner": "TA36qWhpqewgAPL48XVvDPxZnWwgRb8zgH",
+      "spender": "TTJxU3P8rHycAyFY4kVtGNfmnMH4ezcuM9",
+      "spender_type": "contract",
+      "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+      "token_symbol": "USDT",
+      "token_decimals": 6,
+      "allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "unlimited": true
+    },
+    {
+      "owner": "TA36qWhpqewgAPL48XVvDPxZnWwgRb8zgH",
+      "spender": "TKwNfJYb2iyouByKpNdxQ6tryXK8KhTPT9",
+      "spender_type": "contract",
+      "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+      "token_symbol": "USDT",
+      "token_decimals": 6,
+      "allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "unlimited": true
+    },
+    {
+      "owner": "TA36qWhpqewgAPL48XVvDPxZnWwgRb8zgH",
+      "spender": "TTJxU3P8rHycAyFY4kVtGNfmnMH4ezcuM9",
+      "spender_type": "contract",
+      "token_contract": "TXxt4T3do2drYAcp4AXMNPqzGUsRYdqh1p",
+      "token_symbol": "PGNLZ",
+      "token_decimals": 18,
+      "allowance_raw": "115792089237316195423570985008687907853269984665640564038555469133380813636903",
+      "unlimited": true
+    },
+    {
+      "owner": "TA36qWhpqewgAPL48XVvDPxZnWwgRb8zgH",
+      "spender": "TKwNfJYb2iyouByKpNdxQ6tryXK8KhTPT9",
+      "spender_type": "contract",
+      "token_contract": "TXxt4T3do2drYAcp4AXMNPqzGUsRYdqh1p",
+      "token_symbol": "PGNLZ",
+      "token_decimals": 18,
+      "allowance_raw": "115792089237316195423570985008687907853269984665640564039364017449460251189432",
+      "unlimited": true
+    },
+    {
+      "owner": "TA3dNSYyxorcabs62LXTWEDfEhyBqnjeVL",
       "spender": "TTRr81XJt6zESpJw2zHgJNAsxcsyT5MVYv",
       "spender_type": "contract",
       "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
@@ -23,8 +93,8 @@
       "unlimited": true
     },
     {
-      "owner": "TA4UoJarBSzLzJwHPreNL1zmqKkZk6sKan",
-      "spender": "TT1j2adMBb6bF2K8C2LX1QkkmSXHjiaAfw",
+      "owner": "TA4EWdzzxNvEqS3j9sP8r1tFE3zcfaiYoJ",
+      "spender": "TYd2b4LAtRuxSjma567KvmwBPE9hcg2b8K",
       "spender_type": "contract",
       "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
       "token_symbol": "USDT",
@@ -33,47 +103,7 @@
       "unlimited": true
     },
     {
-      "owner": "TAAfVDSA6JMJLL9PotaUBhBrAWgs9LasFc",
-      "spender": "TTJxU3P8rHycAyFY4kVtGNfmnMH4ezcuM9",
-      "spender_type": "contract",
-      "token_contract": "THcKNaHtiNE3VDE7cK16L7SSe5uFZWhHfu",
-      "token_symbol": "TRINU",
-      "token_decimals": 18,
-      "allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
-      "unlimited": true
-    },
-    {
-      "owner": "TAAfVDSA6JMJLL9PotaUBhBrAWgs9LasFc",
-      "spender": "TCFNp179Lg46D16zKoumd4Poa2WFFdtqYj",
-      "spender_type": "contract",
-      "token_contract": "TR5z1KagLNVxsfnct9rdwnw5EgEMDG1Htb",
-      "token_symbol": "TONLY",
-      "token_decimals": 18,
-      "allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
-      "unlimited": true
-    },
-    {
-      "owner": "TAAfVDSA6JMJLL9PotaUBhBrAWgs9LasFc",
-      "spender": "TTJxU3P8rHycAyFY4kVtGNfmnMH4ezcuM9",
-      "spender_type": "contract",
-      "token_contract": "TVJLqJXw2JxerRf6cNZkaCbyAbczoN8EHq",
-      "token_symbol": "PEDPED",
-      "token_decimals": 18,
-      "allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
-      "unlimited": true
-    },
-    {
-      "owner": "TAEJaAfpRBjGd9VihZTkzz2y5zgcsNT6Bm",
-      "spender": "TCFNp179Lg46D16zKoumd4Poa2WFFdtqYj",
-      "spender_type": "contract",
-      "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
-      "token_symbol": "USDT",
-      "token_decimals": 6,
-      "allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
-      "unlimited": true
-    },
-    {
-      "owner": "TAHMgdf5Dzkx7PVDT4Ma55obgBFixhowd1",
+      "owner": "TABK2Z9cVWLb6cmLtjbfFZrvbBTvfMTGNV",
       "spender": "TTRr81XJt6zESpJw2zHgJNAsxcsyT5MVYv",
       "spender_type": "contract",
       "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
@@ -83,8 +113,8 @@
       "unlimited": true
     },
     {
-      "owner": "TAJtrykvwx3mF8G8DAEuZegDDwr1GJHzFX",
-      "spender": "TPwezUWpEGmFBENNWJHwXHRG1D2NCEEt5s",
+      "owner": "TACn6waEgBgiMqMATUirw1BjdUw5in4gSa",
+      "spender": "TTJxU3P8rHycAyFY4kVtGNfmnMH4ezcuM9",
       "spender_type": "contract",
       "token_contract": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
       "token_symbol": "USDT",
